@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+
+    border-top: 1px solid rgba(214, 51, 108, 0.15);
+}
+
+.footer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+
+    color: var(--rosa-escuro);
+
+    max-width: 800px;
+    margin: 0 auto;
+}

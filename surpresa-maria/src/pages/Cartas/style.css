@@ -1,0 +1,233 @@
+.cartinhas {
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+}
+
+.cartinhas h1 {
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    font-size: 3rem;
+}
+
+/* Cards */
+
+.card-cartinha {
+    position: relative;
+
+    background: #fffdf8;
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: var(--sombra);
+
+    transition: all 0.4s ease;
+
+    overflow: hidden;
+}
+
+.card-cartinha:hover {
+    transform: translateY(-6px);
+}
+
+/* Faixa decorativa */
+
+.card-cartinha::before {
+    content: '💌';
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 1.8rem;
+}
+
+/* Título */
+
+.card-cartinha h2 {
+    margin-bottom: 20px;
+
+    color: var(--rosa-escuro);
+
+    font-size: 1.8rem;
+}
+
+/* Texto */
+
+.card-cartinha p {
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #555;
+}
+
+/* Efeito papel */
+
+.card-cartinha::after {
+    content: '';
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 95%,
+            rgba(0,0,0,0.03) 100%
+        );
+
+    pointer-events: none;
+}
+
+/* Animação */
+
+.card-cartinha {
+    animation: cartaEntrando 0.8s ease;
+}
+
+@keyframes cartaEntrando {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .cartinhas h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .card-cartinha {
+        padding: 25px;
+    }
+
+    .card-cartinha h2 {
+        font-size: 1.4rem;
+    }
+
+    .card-cartinha p {
+        font-size: 1rem;
+    }
+}
+
+.ultima-cartinha {
+    max-width: 900px;
+
+    margin: 60px auto 20px;
+    padding: 45px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff8fab,
+        #ffb3c6
+    );
+
+    color: white;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(214, 51, 108, 0.25);
+
+    position: relative;
+
+    overflow: hidden;
+
+    animation: destaqueFinal 2s ease;
+}
+
+.ultima-cartinha h2 {
+    color: white;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.ultima-cartinha p {
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: white;
+}
+
+/* Corações decorativos */
+
+.ultima-cartinha::before {
+    content: '❤️';
+
+    position: absolute;
+
+    top: 20px;
+    left: 25px;
+
+    font-size: 2rem;
+
+    opacity: 0.4;
+}
+
+.ultima-cartinha::after {
+    content: '💖';
+
+    position: absolute;
+
+    bottom: 20px;
+    right: 25px;
+
+    font-size: 2rem;
+
+    opacity: 0.4;
+}
+
+/* Efeito suave */
+
+@keyframes destaqueFinal {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .ultima-cartinha {
+        margin: 40px 15px;
+        padding: 30px 20px;
+    }
+
+    .ultima-cartinha h2 {
+        font-size: 1.8rem;
+    }
+
+    .ultima-cartinha p {
+        font-size: 1rem;
+    }
+}
