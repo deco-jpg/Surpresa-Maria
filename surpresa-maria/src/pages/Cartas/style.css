@@ -231,3 +231,46 @@
         font-size: 1rem;
     }
 }
+
+.final-cartinhas {
+    text-align: center;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.final-cartinhas p {
+    font-size: 1.1rem;
+
+    margin-bottom: 20px;
+
+    color: var(--rosa-escuro);
+}
+
+.btn-surpresa {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    background: linear-gradient(
+        135deg,
+        #ff7eb3,
+        #ff4d8d
+    );
+
+    transition: .3s ease;
+}
+
+.btn-surpresa:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(255, 77, 141, .3);
+}

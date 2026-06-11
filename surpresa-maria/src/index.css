@@ -186,3 +186,17 @@ main {
         opacity: 0;
     }
 }
+
+body {
+    margin: 0;
+
+    background: linear-gradient(
+        180deg,
+        #fff5f7 0%,
+        #ffe4ec 50%,
+        #fff0f5 100%
+    );
+
+    min-height: 100vh;
+}
+

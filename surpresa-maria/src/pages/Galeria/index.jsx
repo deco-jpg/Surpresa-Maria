@@ -7,6 +7,11 @@ import foto1 from '../../assets/maria1.jpeg';
 import casal1 from '../../assets/casal1.jpeg';
 import buque from '../../assets/buque.jpeg';
 import viagem from '../../assets/viagem.jpeg';
+import aniversario from '../../assets/aniversario.jpeg';
+import deitados from '../../assets/deitados.jpeg';
+import brincando from '../../assets/brincando.jpeg';
+import praia from '../../assets/praia.jpeg';
+
 
 export default function Galeria() {
     const fotos = [
@@ -50,6 +55,26 @@ export default function Galeria() {
             imagem: viagem,
             alt: 'Viagem',
             legenda: 'Nossa viagem para Salvador 🏖️'
+        },
+        {
+            imagem: aniversario,
+            alt: 'Beijo',
+            legenda: 'Aniverário em familia ❤️'
+        },
+        {
+            imagem: deitados,
+            alt: 'deitados',
+            legenda: 'Deitados pós almoço🥰'
+        },
+        {
+            imagem: brincando,
+            alt: 'Brincando',
+            legenda: 'Brincando com as crianças 🎈'
+        },
+        {
+            imagem: praia,
+            alt: 'praia',
+            legenda: 'Curtindo a praia com a sogra e familia 🌊'
         }
     ];
 

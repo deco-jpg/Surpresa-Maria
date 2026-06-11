@@ -176,3 +176,38 @@
         width: 100%;
     }
 }
+
+.surpresa-home {
+    text-align: center;
+
+    margin: 60px 0;
+}
+
+.btn-surpresa {
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #ff7eb3,
+        #ff4d8d
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    border-radius: 999px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-surpresa:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(255, 77, 141, 0.3);
+}

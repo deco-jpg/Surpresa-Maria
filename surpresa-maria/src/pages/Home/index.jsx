@@ -3,6 +3,7 @@ import foto1 from '../../assets/casal1.jpeg';
 import carro from '../../assets/carro.jpeg';
 import fotoespelho from '../../assets/fotoespelho.jpeg';
 import buque from '../../assets/buque.jpeg';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -55,6 +56,8 @@ export default function Home() {
                     Explora essa página e veja o quanto eu te amo.
                 </p>
             </div>
+
+           
            
         </>
 

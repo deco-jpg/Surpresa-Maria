@@ -1,0 +1,234 @@
+.surpresa {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+/* ENVELOPE */
+
+.envelope {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    cursor: pointer;
+
+    margin-top: 120px;
+
+    font-size: 8rem;
+
+    animation: pulseEnvelope 2s infinite;
+
+    transition: transform .3s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.08);
+}
+
+.envelope p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@keyframes pulseEnvelope {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* CORAÇÃO */
+
+.coracao-pulsando {
+    font-size: 5rem;
+
+    animation:
+        aparecerSuave .8s ease,
+        pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* FOTO */
+
+.foto-final {
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 25px;
+
+    margin: 30px 0;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+
+    animation: aparecerSuave 1s ease;
+}
+
+/* CARTA */
+
+.carta-final {
+    max-width: 800px;
+
+    background: rgba(255,255,255,.9);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(8px);
+
+    line-height: 1.8;
+
+    animation: abrirCarta 1.2s ease forwards;
+}
+
+.carta-final h2 {
+    margin-top: 30px;
+
+    color: #d63384;
+}
+
+/* CHUVA DE CORAÇÕES */
+
+.chuva-coracoes {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 999;
+}
+
+.chuva-coracoes span {
+    position: absolute;
+
+    top: -100px;
+
+    opacity: 0;
+
+    animation-name: coracaoCaindo;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    filter: drop-shadow(
+        0 0 8px rgba(255, 105, 180, 0.4)
+    );
+}
+
+@keyframes coracaoCaindo {
+    0% {
+        transform:
+            translateX(0)
+            translateY(-100px)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        transform:
+            translateX(-25px)
+            translateY(25vh)
+            rotate(90deg);
+    }
+
+    50% {
+        transform:
+            translateX(25px)
+            translateY(50vh)
+            rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translateX(-20px)
+            translateY(75vh)
+            rotate(270deg);
+    }
+
+    100% {
+        transform:
+            translateX(20px)
+            translateY(120vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+/* ANIMAÇÕES */
+
+@keyframes abrirCarta {
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(120px)
+            scale(0.75);
+    }
+
+    60% {
+        opacity: 1;
+
+        transform:
+            translateY(-10px)
+            scale(1.03);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
